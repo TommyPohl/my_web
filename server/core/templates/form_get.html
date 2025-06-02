@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Form GET</h1>
+
+<form method="GET" action="{% url 'submit_form_get' %}">
+    <label for="name">Meno:</label>
+	<input type="text" id="name" name="name" required>
+	<button type="submit">Odoslať</button>
+</form>
+{% endblock %}
